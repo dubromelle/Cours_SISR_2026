@@ -1250,7 +1250,7 @@ total=0
     echo <span class="st">"OK : $total Go"</span>
 <span class="kw">fi</span></pre>
 
-<div class="quiz" data-id="q-trace-p2">
+<div class="quiz" data-id="q-trace-p2" data-title="Lire un script">
   <div class="q" data-ok="3">
     <p class="qt">Qu’affiche le script ci-dessus ?</p>
     <ul><li>OK : 65 Go</li><li>Alerte : 35 Go</li><li>Alerte : 65 Go</li><li>Alerte : $total Go</li></ul>
@@ -1305,7 +1305,8 @@ echo <span class="st">"OK : / est rempli à $occupation %"</span>
   <p>Écrire un script par petites étapes : une ligne, un test ; puis la suivante. Ajouter des <code>echo</code> pour voir le contenu des variables. En Bash, <code>bash -x script.sh</code> affiche chaque commande avant de l’exécuter. En PowerShell, l’éditeur ISE ou VS Code permet de poser des points d’arrêt, comme dans Visual Studio.</p>
 </div>
 
-<div class="quiz" data-id="q-fin-p2">
+<h2>Vérifier ses connaissances</h2>
+<div class="quiz" data-id="q-fin-p2" data-title="Scripts Bash et PowerShell" data-label="Quiz de fin de partie">
   <div class="q" data-ok="2">
     <p class="qt">Que signifie la première ligne <code>#!/bin/bash</code> ?</p>
     <ul><li>C’est un commentaire sans effet</li><li>Elle indique quel interpréteur doit exécuter le fichier</li><li>Elle donne le droit d’exécution</li><li>Elle importe une bibliothèque</li></ul>
@@ -1675,7 +1676,8 @@ $attendus = Import-Csv $Fichier -Delimiter <span class="st">';'</span> -Encoding
   </div>
 </div>
 
-<div class="quiz" data-id="q-fin-p3">
+<h2>Vérifier ses connaissances</h2>
+<div class="quiz" data-id="q-fin-p3" data-title="Journaux et indicateurs" data-label="Quiz de fin de partie">
   <div class="q" data-ok="2">
     <p class="qt">Pourquoi tous les serveurs doivent-ils être synchronisés par NTP ?</p>
     <ul><li>Pour accélérer le réseau</li><li>Pour pouvoir comparer et ordonner les événements des journaux de plusieurs machines</li><li>Pour chiffrer les journaux</li><li>Pour économiser de l’espace disque</li></ul>
@@ -1819,7 +1821,8 @@ curl -I http://localhost/index.html   <span class="cm"># HTTP/1.1 200 OK</span><
   </div>
 </div>
 
-<div class="quiz" data-id="q-fin-p4">
+<h2>Vérifier ses connaissances</h2>
+<div class="quiz" data-id="q-fin-p4" data-title="Sauvegarder et restaurer" data-label="Quiz de fin de partie">
   <div class="q" data-ok="3">
     <p class="qt">Un serveur est sauvegardé chaque nuit à 23 h. Quel est son RPO ?</p>
     <ul><li>23 heures</li><li>1 heure</li><li>24 heures</li><li>Le temps de restaurer</li></ul>
@@ -1979,7 +1982,8 @@ curl -I http://localhost/index.html   <span class="cm"># HTTP/1.1 200 OK</span><
 </ul>
 <p>Chaque utilisateur a un <strong>profil</strong> qui détermine ce qu’il voit et peut faire : <em>Self-Service</em> (déclarer et suivre ses tickets), <em>Technician</em>, <em>Supervisor</em>, <em>Admin</em>, <em>Super-Admin</em>. Une installation neuve contient quatre comptes : <code>glpi</code> (super-administrateur), <code>tech</code>, <code>normal</code> et <code>post-only</code>, avec des mots de passe connus (<code>glpi</code>, <code>tech</code>, <code>normal</code>, <code>postonly</code>) : la première chose à faire est de les changer ou de les désactiver, ce que GLPI rappelle par un bandeau d’avertissement. GLPI peut aussi s’appuyer sur l’annuaire Active Directory (LDAP) pour l’authentification : les utilisateurs se connectent alors avec leur compte <code>m2l.lan</code>.</p>
 
-<div class="quiz" data-id="q-fin-p5">
+<h2>Vérifier ses connaissances</h2>
+<div class="quiz" data-id="q-fin-p5" data-title="Incidents et demandes" data-label="Quiz de fin de partie">
   <div class="q" data-ok="2">
     <p class="qt">Quel est l’objectif principal de la gestion des incidents ?</p>
     <ul><li>Trouver la cause racine</li><li>Rétablir le service le plus vite possible</li><li>Remplacer le matériel</li><li>Former les utilisateurs</li></ul>
